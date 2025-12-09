@@ -65,12 +65,14 @@ Contoh implementasi:
 ```java
 class Song { ... }
 class PopSong extends Song { ... }
+```
 
 ### 2. Array & Collection (ArrayList)
 
 Menggunakan ArrayList untuk menyimpan dan mengelola playlist:
 
-Nama Anggota	Tugas
-Nadiva Meiliya	Membuat class Song, PopSong, RockSong, JazzSong
-Wizad Akmalia Zulfaa	Membuat PlaylistManager dan fitur File I/O
-Zefanya Christian Natasha	Membuat GUI dan Multithreading
+|Nama Anggota |	Tugas|
+|------------ |------|
+|Nadiva Meiliya |	Membuat class Song, PopSong, RockSong, JazzSong
+|Wizad Akmalia Zulfaa |	Membuat PlaylistManager dan fitur File I/O
+|Zefanya Christian Natasha	| Membuat GUI dan Multithreading
