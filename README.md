@@ -107,10 +107,32 @@ Digunakan class Java berikut:
 - BufferedWriter
 - BufferedReader
 Tujuan fitur ini:
-✅ Menyimpan data agar tidak hilang saat program ditutup
-✅ Membaca kembali playlist yang sudah disimpan
+- Menyimpan data agar tidak hilang saat program ditutup
+- Membaca kembali playlist yang sudah disimpan
 
 Contoh implementasi:
+```java
+BufferedWriter writer = new BufferedWriter(new FileWriter("playlist.txt"));
+```
+4. Multithreading (Materi Setelah UTS)
+Project ini juga mengimplementasikan Multithreading, yaitu menjalankan beberapa proses secara bersamaan.
+Digunakan untuk:
+- Simulasi pemutaran lagu
+- Menampilkan waktu berjalan tanpa menghentikan program utama
+
+Class yang digunakan:
+```java
+static class PlayThread extends Thread {
+    @Override
+    public void run() {
+        Thread.sleep(1000);
+    }
+}
+```
+Keuntungan Multithreading:
+- Program tetap bisa menerima input saat lagu diputar
+- Tidak mengganggu menu utama
+- Memberi pengalaman seperti pemutar musik sungguhan
 
 |Nama Anggota |	Tugas|
 |------------ |------|
