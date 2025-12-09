@@ -52,25 +52,53 @@ Komponen GUI yang dipakai:
 
 ##  Materi Sebelum UTS yang Diimplementasikan
 
-### 1. Object Oriented Programming (OOP)
+1. Object Oriented Programming (OOP)
 
-Konsep yang digunakan:
+Project ini dibuat menggunakan paradigma Pemrograman Berorientasi Objek (PBO) yang berfokus pada penggunaan objek sebagai dasar pembuatan program.
 
-- Class & Object
-- Encapsulation
-- Inheritance
-- Polymorphism
+Konsep OOP yang digunakan dalam project ini meliputi:
+
+a. Class dan Object
+Setiap lagu direpresentasikan sebagai objek dari class Song, dan genre lagu diwakili oleh class turunan seperti PopSong, RockSong, dan JazzSong.
 
 Contoh implementasi:
 ```java
 class Song { ... }
 class PopSong extends Song { ... }
 ```
+b. Encapsulation (Enkapsulasi)
+Data dalam objek dilindungi menggunakan private dan diakses melalui getter dan setter. Tujuannya agar data tidak bisa diubah secara langsung dari luar class.
 
-### 2. Array & Collection (ArrayList)
+Contoh:
+```java
+private String title;
+public String getTitle() { return title; }
+```
+c. Inheritance (Pewarisan)
+Class turunan seperti PopSong, RockSong, dan JazzSong mewarisi sifat dari class Song menggunakan keyword extends.
 
-Menggunakan ArrayList untuk menyimpan dan mengelola playlist:
+Contoh:
+```java
+public class PopSong extends Song { ... }
+```
+d. Polymorphism (Polimorfisme)
+Method getGenre() dioverride pada class turunan untuk menghasilkan output yang berbeda meskipun pemanggilan method sama.
+2. Array dan Collection (ArrayList)
 
+Project ini menggunakan struktur data ArrayList untuk menyimpan daftar lagu yang ada di playlist.
+
+ArrayList digunakan karena:
+- Dapat menyimpan data secara dinamis
+- Mudah ditambah dan dihapus
+- Cocok untuk data bertipe objek
+Contoh penggunaan:
+```java
+private ArrayList<Song> playlist = new ArrayList<>();
+```
+Fungsi yang memanfaatkan ArrayList:
+- addSong() → menambahkan lagu
+- displaySongs() → menampilkan semua lagu
+- getSongs() → mengambil data playlist
 |Nama Anggota |	Tugas|
 |------------ |------|
 |Nadiva Meiliya |	Membuat class Song, PopSong, RockSong, JazzSong
