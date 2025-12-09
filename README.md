@@ -59,6 +59,7 @@ Project ini dibuat menggunakan paradigma Pemrograman Berorientasi Objek (PBO) ya
 Konsep OOP yang digunakan dalam project ini meliputi:
 
 a. Class dan Object
+
 Setiap lagu direpresentasikan sebagai objek dari class Song, dan genre lagu diwakili oleh class turunan seperti PopSong, RockSong, dan JazzSong.
 
 Contoh implementasi:
@@ -67,6 +68,7 @@ class Song { ... }
 class PopSong extends Song { ... }
 ```
 b. Encapsulation (Enkapsulasi)
+
 Data dalam objek dilindungi menggunakan private dan diakses melalui getter dan setter. Tujuannya agar data tidak bisa diubah secara langsung dari luar class.
 
 Contoh:
@@ -75,6 +77,7 @@ private String title;
 public String getTitle() { return title; }
 ```
 c. Inheritance (Pewarisan)
+
 Class turunan seperti PopSong, RockSong, dan JazzSong mewarisi sifat dari class Song menggunakan keyword extends.
 
 Contoh:
@@ -82,6 +85,7 @@ Contoh:
 public class PopSong extends Song { ... }
 ```
 d. Polymorphism (Polimorfisme)
+
 Method getGenre() dioverride pada class turunan untuk menghasilkan output yang berbeda meskipun pemanggilan method sama.
 
 2. Array dan Collection (ArrayList)
