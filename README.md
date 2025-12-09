@@ -145,6 +145,12 @@ Keuntungan Multithreading:
 - Tidak mengganggu menu utama
 - Memberi pengalaman seperti pemutar musik sungguhan
 
+##  Screenshot Program
+
+![Tampilan Program](SS/Console.png)
+
+![Tampilan Program](SS/Gui.png)
+
 |Nama Anggota |	Tugas|
 |------------ |------|
 |Nadiva Meiliya |	Membuat class Song, PopSong, RockSong, JazzSong
