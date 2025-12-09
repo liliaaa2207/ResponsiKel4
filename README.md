@@ -83,10 +83,9 @@ public class PopSong extends Song { ... }
 ```
 d. Polymorphism (Polimorfisme)
 Method getGenre() dioverride pada class turunan untuk menghasilkan output yang berbeda meskipun pemanggilan method sama.
+
 2. Array dan Collection (ArrayList)
-
 Project ini menggunakan struktur data ArrayList untuk menyimpan daftar lagu yang ada di playlist.
-
 ArrayList digunakan karena:
 - Dapat menyimpan data secara dinamis
 - Mudah ditambah dan dihapus
@@ -99,6 +98,20 @@ Fungsi yang memanfaatkan ArrayList:
 - addSong() → menambahkan lagu
 - displaySongs() → menampilkan semua lagu
 - getSongs() → mengambil data playlist
+
+3. File Input dan Output (File I/O)
+Aplikasi mendukung penyimpanan dan pemuatan data playlist menggunakan file teks.
+Digunakan class Java berikut:
+- FileWriter
+- FileReader
+- BufferedWriter
+- BufferedReader
+Tujuan fitur ini:
+✅ Menyimpan data agar tidak hilang saat program ditutup
+✅ Membaca kembali playlist yang sudah disimpan
+
+Contoh implementasi:
+
 |Nama Anggota |	Tugas|
 |------------ |------|
 |Nadiva Meiliya |	Membuat class Song, PopSong, RockSong, JazzSong
